@@ -1,136 +1,78 @@
-/* <div class="menu_wrapper">
-<nav id="menu" class="menu-main-menu-container">
-    <ul id="menu-main-menu" class="menu">
-        <li>
-            <a href="../../index-betheme.html"><span>Home</span></a>
-        </li>
-       
-        <li>
-            <a href="company.html"><span>Our Brands</span></a>
-        </li>
-        <li class="current_page_item">
-            <a href="about.html"><span>About</span></a>
-        </li>
-        <li>
-            <a href="contact.html"><span>Contact</span></a>
-        </li>
-    </ul>
-</nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
-</div>
-<div class="secondary_menu_wrapper"></div>
-<div class="banner_wrapper"></div>
-
-</div> */
-/* 
-.menu {
+.companies-showcase {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 50px;
+    /* background-color: rgb(182, 182, 182); */
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* background-color: #717171; */
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-}
- */
+    align-content: center;
+    gap: 20px;
 
 
 
-.companies-showcase{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    margin: 1rem;
-}
+  }
+  
+  .company-card {
+    background-color: #445774; 
+    /* border: 1px solid #323131; */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    height: 27em;
+    width: 20em;
 
-.current_page_item {
-    background-color: rgb(50, 58, 65);
-    color:yellow
-}
-
-
-/* <div class="column mcb-column one column_feature_list">
-<div class="feature_list" style=" display: flex; flex-wrap: wrap; justify-content: space-between;">
-    <ul>
-        <li>
-            <div class="logo">
-                <a  href="content/betheme/company.html" title="company">
-                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-arenalogo.png" alt="what">
-                </a>
-            </div>
-        </li>
-
-        <li>
-            <div class="logo">
-                <a  href="content/betheme/company.html" title="company">
-                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-cards-logo.png" alt="what">
-                </a>
-            </div>
-        </li>
-
-        <li>
-            <div class="logo">
-                <a  href="content/betheme/company.html" title="company">
-                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-connectlogo.png" alt="what">
-                </a>
-            </div>
-        </li>
-
-        <li>
-            <div class="logo">
-                <a  href="content/betheme/company.html" title="company">
-                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/batv.png" alt="what">
-                </a>
-            </div>
-        
-        </li>
-
-        <li>
-            <div class="logo">
-                <a  href="content/betheme/company.html" title="company">
-                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-entertainmentlogo.png" alt="what">
-                </a>
-            </div>
-        </li> */
-
-
-/* .feature_list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    padding:1rem;
-    width:100%;
-
-}
-
-
-.feature_list ul li a:hover {
-    color: white;
-    background-color: rgb(50, 58, 65);
-    width: 100%;
-    height: 100%;
-} */
-
-/* Responsive */
-@media (max-width: 768px) {
-    .companies-showcase{
-        grid-template-columns: repeat(1, 1fr);
+    
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    max-width: 200px;
+  }
+  
+  .content {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .content h5 {
+    margin-bottom: 10px;
+  }
+  
+  .divider {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 30px 0;
+  }
+  
+  @media (min-width: 768px) {
+  
+   
+    .company-card {
+      width: calc(50% - 15px);
     }
+  
+  }
+  
+  @media (min-width: 992px) {
+  
+    .company-card {
+      width: calc(33% - 20px);
+    }
+  
+  }
+
+
+  .menu li:hover>a {
+    color: #f9b707 !important;
+    background-color: #445774 !important;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .companies-showcase{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .companies-showcase{
-        grid-template-columns: repeat(3, 1fr);
-    }
+.current_page_item>a {
+    color: #f9b707 !important;
+    background-color: #292e37 !important;
 }
