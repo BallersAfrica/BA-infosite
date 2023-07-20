@@ -45,6 +45,77 @@
         .current_page_item>a {
             color: #f9b707 !important;
         }
+
+        .feature_list{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+        }
+
+        .feature_list div {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+            width: fit-content;
+            height: 100%;
+            margin: 0;
+            padding:10px;
+        }
+
+        .feature_list div div {
+            width: 10em;
+            height: 10em; 
+            background-color: rgb(50, 58, 65,.6);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:10px;
+            border-radius: 5%;
+
+        }
+        
+        .feature_list div div img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feature_list div div:hover {
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+            background-color: rgb(34, 43, 51);
+        }
+
+        
+/* media queries */
+@media screen and (max-width: 1200px) {
+  .feature_list div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .feature_list div {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feature_list div {
+    grid-template-columns: repeat(2, 1fr);
+  } 
+}
+/* 
+@media screen and (max-width: 600px) {
+  .feature_list div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+         */
+
+        
+
     </style>
 
 </head>
@@ -422,116 +493,84 @@
                                                 <h2 class="title">Learn more about Ballers Africa</h2>
                                             </div>
                                         </div>
-                                        <a href="content/betheme/company.html">
-                                            <div class="column mcb-column one column_feature_list">
-                                                <div class="feature_list" data-col="4">
-                                                    <ul>
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-arenalogo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
+                               
+                                            <div class="feature_list">
+                                                <div class="">
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-cards-logo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-arenalogo.png" alt="what"> 
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-connectlogo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-entertainmentlogo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-cards-logo.png" alt="what">
+                                                    </a>  
+                                                    </div>
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-healthlogo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-connectlogo.png" alt="what">
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-hublogo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/batv.png" alt="what">
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-leaguelogo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-entertainmentlogo.png" alt="what">
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                                <div class="logo">
-                                                                    <a  href="content/betheme/company.html" title="company">
-                                                                        <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-logo.png" alt="what">
-                                                                    </a>
-                                                                </div>
-                                                            
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">  
+                                                    <img src="images/companyimages/logos/ba-healthlogo.png" alt="what">
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                                    <div class="logo">
-                                                                        <a  href="content/betheme/company.html" title="company">
-                                                                            <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-sportlogo.png" alt="what">
-                                                                        </a>
-                                                                    </div>
-                                                                
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-hublogo.png" alt="what">
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                                <div class="logo">
-                                                                    <a  href="content/betheme/company.html" title="company">
-                                                                        <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-talentlogo.png" alt="what">
-                                                                    </a>
-                                                                </div>
-                                                            
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-leaguelogo.png" alt="what">
+                                                    </a>
+                                                    </div>
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/bakologo.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        
-                                                        </li>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-logo.png" alt="what">
+                                                    </a>  
+                                                    </div>
 
-                                                        <li>
-                                                            <div class="logo">
-                                                                <a  href="content/betheme/company.html" title="company">
-                                                                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/batv.png" alt="what">
-                                                                </a>
-                                                            </div>
-                                                        
-                                                        </li>
-                                                    </ul>
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-sportlogo.png" alt="what">
+                                                    </a>
+                                                    </div>
+
+                                                    <div>
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/ba-talentlogo.png" alt="what"> 
+                                                    </a>
+                                                    </div>
+
+                                                    <div>  
+                                                    <a href="content/betheme/company.html" title="company">
+                                                    <img src="images/companyimages/logos/bakologo.png" alt="what">
+                                                    </a>
+                                                    </div>
+
                                                 </div>
                                             </div>
-                                            <div class="column mcb-column one column_divider">
-                                                <hr class="no_line" style="margin: 0 auto 20px">
-                                            </div>
-                                        </a>
                                     </div>
                                 </div>
                             </div>

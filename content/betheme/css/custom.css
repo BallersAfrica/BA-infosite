@@ -65,6 +65,69 @@
     color:yellow
 }
 
+
+/* <div class="column mcb-column one column_feature_list">
+<div class="feature_list" style=" display: flex; flex-wrap: wrap; justify-content: space-between;">
+    <ul>
+        <li>
+            <div class="logo">
+                <a  href="content/betheme/company.html" title="company">
+                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-arenalogo.png" alt="what">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="logo">
+                <a  href="content/betheme/company.html" title="company">
+                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-cards-logo.png" alt="what">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="logo">
+                <a  href="content/betheme/company.html" title="company">
+                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-connectlogo.png" alt="what">
+                </a>
+            </div>
+        </li>
+
+        <li>
+            <div class="logo">
+                <a  href="content/betheme/company.html" title="company">
+                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/batv.png" alt="what">
+                </a>
+            </div>
+        
+        </li>
+
+        <li>
+            <div class="logo">
+                <a  href="content/betheme/company.html" title="company">
+                    <img class="logo-main scale-with-grid" src="images/companyimages/logos/ba-entertainmentlogo.png" alt="what">
+                </a>
+            </div>
+        </li> */
+
+
+/* .feature_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding:1rem;
+    width:100%;
+
+}
+
+
+.feature_list ul li a:hover {
+    color: white;
+    background-color: rgb(50, 58, 65);
+    width: 100%;
+    height: 100%;
+} */
+
 /* Responsive */
 @media (max-width: 768px) {
     .companies-showcase{
