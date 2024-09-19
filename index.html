@@ -1,749 +1,215 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
-<!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]><html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]><html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
+<html lang="en">
 <head>
-    <!-- Basic Page Needs -->
-    <meta charset="utf-8">
-    <title>Ballers Africa</title>
-    <meta name="description" content="website for ballers africa ">
-    <meta name="author" content="timons">
-
-    <!-- Mobile Specific Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="content/betheme/images/favicon.ico">
-
-    <!-- FONTS -->
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,400italic,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900'>
-    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lora:100,300,400,400italic,500,700,700italic'>
-
-    <!-- CSS -->
-    <link rel='stylesheet' href='css/global.css'>
-    <link rel='stylesheet' href='content/betheme/css/structure.css'>
-    <link rel='stylesheet' href='content/betheme/css/betheme2.css'>
-    <link rel='stylesheet' href='content/betheme/css/custom.css'>
-
-    <!-- Revolution Slider -->
-    <link rel="stylesheet" href="plugins/rs-plugin/css/settings.css">
-
-    <style>
-        /* hover menu color change items  */
-        .menu li:hover>a {
-            color: #f9b707 !important;
-        }
-
-        .current_page_item>a {
-            color: #f9b707 !important;
-        }
-
-        .feature_list{
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            width:100%;
-        }
-
-        .feature_list div {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 10px;
-            width: fit-content;
-            height: 100%;
-            margin: 0;
-            padding:10px;
-        }
-
-        .feature_list div div {
-            width: 10em;
-            height: 10em; 
-            background-color: rgb(50, 58, 65,.6);
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:10px;
-            border-radius: 5%;
-        }
-        
-        .feature_list div div img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .feature_list div div:hover {
-            transform: scale(1.1);
-            transition: all 0.5s ease-in-out;
-            background-color: rgb(34, 43, 51);
-        }
-
-        
-/* media queries */
-@media screen and (max-width: 1200px) {
-  .feature_list div {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .feature_list div {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .feature_list div {
-    grid-template-columns: repeat(2, 1fr);
-  } 
-}
-/* 
-@media screen and (max-width: 600px) {
-  .feature_list div {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-         */
-
-        
-
-    </style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ballersafrica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="php/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-
-
-<body class="home page-template-default page template-slider color-custom style-default layout-full-width no-content-padding header-classic sticky-header sticky-tb-color ab-show subheader-both-center menu-link-color menuo-right mobile-tb-hide mobile-side-slide mobile-mini-mr-ll">
-    <div id="Wrapper">
-        <div id="Header_wrapper">
-            <header id="Header">
-                <div id="Action_bar">
-                    <div class="container">
-                        <div class="column one">
-                            <ul class="contact_details">
-                                <li class="slogan">
-                                    Have any questions?
-                                </li>
-                                <li class="phone">
-                                    <i class="icon-phone"></i><a href="tel:+256 764 954 215">+256 764 954 215</a>
-                                </li>
-                                <li class="mail">
-                                    <i class="icon-mail-line"></i><a href="mailto:africaballers@gmail.com">africaballers@gmail.com</a>
-                                </li>
-                            </ul>
-                            <ul class="social">
-                              
-                                <li class="facebook">
-                                    <a href="https://www.instagram.com/ballersafricagroup/" title="Facebook"><i class="icon-facebook"></i></a>
-                                </li>
-                              
-                                <li class="twitter">
-                                    <a href="https://twitter.com/BallersAfrica_?t=dwUiAJP_RBGgZtQZL2HPAQ&s=08" title="Twitter"><i class="icon-twitter"></i></a>
-                                </li>
-                               
-                                <li class="youtube">
-                                    <a href="https://www.youtube.com/@BallersAfricaGroup" title="YouTube"><i class="icon-play"></i></a>
-                                </li>
-                                
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="header_placeholder"></div>
-                <div id="Top_bar">
-                    <div class="container">
-                        <div class="column one">
-                            <div class="top_bar_left clearfix">
-                                <div class="logo">
-                                    <a id="logo" href="index.html" title="BeTheme - Best WordPress Theme Ever"><img class="logo-main scale-with-grid" src="content/betheme/images/logo.png" alt="logo"><img class="logo-sticky scale-with-grid" src="content/betheme/images/logo.png" alt="logo"><img class="logo-mobile scale-with-grid" src="content/betheme/images/logo.png" alt="logo"><img class="logo-mobile-sticky scale-with-grid" src="content/betheme/images/logo.png" alt="logo">
-                                    </a>
-                                </div>
-                                <div class="menu_wrapper">
-                                    <nav id="menu" class="menu-main-menu-container">
-                                        <ul id="menu-main-menu" class="menu">
-                                            <li class="current_page_item">
-                                                <a href="index.html"><span>Home</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="content/betheme/company.html"><span>Our brands</span></a>
-                                            </li>
-                                           
-                                            <li>
-                                                <a href="content/betheme/about.html"><span>About</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="content/betheme/contact.html"><span>Contact</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
-                                </div>
-                                <div class="secondary_menu_wrapper"></div>
-                                <div class="banner_wrapper"></div>
-                                <div class="search_wrapper">
-                                    <form method="get" id="searchform" action="#">
-                                        <i class="icon_search icon-search-fine"></i><a href="#" class="icon_close"><i class="icon-cancel-fine"></i></a>
-                                        <input type="text" class="field" name="s" id="s" placeholder="Enter your search">
-                                        <input type="submit" class="submit" value="" style="display:none">
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mfn-main-slider" id="mfn-rev-slider">
-                    <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
-                        <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none" data-version="5.3.1.5">
-                            <ul>
-                                <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                                    <img src="./images/companyimages/hoop.jpg" alt="" title="home_betheme_slider_slide1" width="1920" height="760" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="7" class="rev-slidebg" data-no-retina>
-                                    <div class="tp-caption tp-resizeme rs-parallaxlevel-3" id="slide-1-layer-1" data-x="center" data-hoffset="" data-y="center" data-voffset="-150" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":200,"speed":700,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 100px; line-height: 100px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">
-                                        Welcome to Ballers Africa
-                                    </div>
-                                    <div class="aligncenter tp-caption tp-resizeme rs-parallaxlevel-3" id="slide-1-layer-2" data-x="center" data-hoffset="" data-y="center" data-voffset="" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on" data-frames='[{"delay":300,"speed":700,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 42px; line-height: 54px; font-weight: 100; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">
-                                         we are passionate about transforming lives 
-                                         <br/>in Africa through technology.
-                                    </div>
-                                    <a href="content/betheme/company.html">
-                                      <div class="tp-caption rev-btn  rs-parallaxlevel-3" id="slide-1-layer-3" data-x="center" data-hoffset="" data-y="center" data-voffset="150" data-width="['auto']" data-height="['auto']" data-type="button" data-actions='[{"event":"click","action":"scrollbelow","offset":"-60px","delay":""}]' data-responsive_offset="on" data-frames='[{"delay":400,"speed":700,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"300","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(0, 124, 195, 1.00);bs:solid;bw:0 0 0 0;"}]' data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[16,16,16,16]" data-paddingright="[50,50,50,50]" data-paddingbottom="[16,16,16,16]" data-paddingleft="[50,50,50,50]" style="z-index: 7; white-space: nowrap; font-size: 16px; line-height: 16px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 149, 235, 1.00);border-color:rgba(0, 0, 0, 1.00);border-radius:5px 5px 5px 5px;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                                        Check out our efforts 
-                                    </div>  
-                                    </a>
-                                    
-                                </li>
-                            </ul>
-                            <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </header>
+<body>
+    <header>
+        <div class="logo">BA <span>CARDS.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#crypto-market">Our Brands</a></li>
+                <li><a href="#aboutus">About US</a></li>
+                <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <button class="register-btn">Join Us</button>
+            <button class="wallet-btn">Contact Us</button>
         </div>
-        <div id="Content">
-            <div class="content_wrapper clearfix">
-                <div class="sections_group">
-                    <div class="entry-content">
-                        <div class="section mcb-section" style="padding-top:70px; padding-bottom:30px;">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one-third column_icon_box">
-                                            <div class="icon_box icon_position_top has_border">
-                                                <div class="icon_wrapper">
-                                                    <div class="icon">
-                                                        <i class="icon-docs"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="desc_wrapper">
-                                                    <h4 class="title">One of our products </h4>
-                                                    <div class="desc">
-                                                        A prepaid card system that offers exclusive deals and discounts 
-                                                         across all Ballers Africa-affiliated locations, events, facilities, and services.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one-third column_icon_box ">
-                                            <div class="icon_box icon_position_top has_border">
-                                                <div class="icon_wrapper">
-                                                    <div class="icon">
-                                                        <i class="icon-cog-line"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="desc_wrapper">
-                                                    <h4 class="title">Diversity</h4>
-                                                    <div class="desc">
-                                                        Over a wide range of different cultures 
-                                                        <br> and backgrounds,all youth gather.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one-third column_icon_box ">
-                                            <div class="icon_box icon_position_top no_border">
-                                                <div class="icon_wrapper">
-                                                    <div class="icon">
-                                                        <i class="icon-star-line"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="desc_wrapper">
-                                                    <h4 class="title">Experience</h4>
-                                                    <div class="desc">
-                                                        With our life time experience 
-                                                        <br> we venture into the unknown.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section" style="padding-top:80px; padding-bottom:290px; background-color:#434548; ; background-image:url(/images/companyimages/home.jpg); background-repeat:no-repeat; background-position:center bottom">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_fancy_heading">
-                                            <div class="fancy_heading fancy_heading_icon">
-                                                <h2 class="title" style=" color:white">The largest ever buy Africa build Africa effort </h2>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one-fourth column_quick_fact ">
-                                            <div class="quick_fact align_ animate-math">
-                                                <div class="number-wrapper" style=" color:white">
-                                                    <span class="number" data-to="10">10</span><span class="label postfix">+</span>
-                                                </div>
-                                                <h3 class="title" style=" color:white">company partnerships</h3>
-                                                <hr class="hr_narrow">
-                                                <div class="desc"></div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one-fourth column_quick_fact ">
-                                            <div class="quick_fact align_ animate-math">
-                                                <div class="number-wrapper" style=" color:white">
-                                                    <span class="number" data-to="200">200</span><span class="label postfix">+</span>
-                                                </div>
-                                                <h3 class="title" style=" color:white">locations</h3>
-                                                <hr class="hr_narrow">
-                                                <div class="desc"></div>
-                                            </div>
-                                        </div>
-                                        <div class="column mcb-column one-fourth column_quick_fact ">
-                                            <div class="quick_fact align_ animate-math">
-                                                <div class="number-wrapper" style=" color:white">
-                                                    <span class="number" data-to="4">4</span><span class="label postfix">k+</span>
-                                                </div>
-                                                <h3 class="title" style=" color:white" >happy clients</h3>
-                                                <hr class="hr_narrow">
-                                                <div class="desc"></div>
-                                            </div>
-                                        </div>
-                                       
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="section mcb-section full-width no-margin-h no-margin-v" style="padding-top:60px; padding-bottom:60px; background-color:#0095eb">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix align_center">
-                                                <h2 style="margin: 0; color: #fff;">Some of our companies </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section full-width no-margin-h no-margin-v" style="padding-top:0px; padding-bottom:0px;">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_portfolio_slider ">
-                                            <div class="portfolio_slider" data-size="480" data-scroll="5">
-                                                <ul class="portfolio_slider_ul">
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-
-                                                    <li>
-                                                        <div class="image_frame scale-with-grid">
-                                                            <div class="image_wrapper">
-                                                                <a href="content/betheme/portfolio_item5.html">
-                                                                    <div class="mask"></div><img width="960" height="720" src="./images/companyimages/hoop.jpg" class="scale-with-grid wp-post-image" alt="">
-                                                                </a>
-                                                                <div class="image_links triple">
-                                                                    <a href="content/betheme/images/home_betheme_portfolio1-1200x938.jpg" class="zoom" rel="prettyphoto"><i class="icon-search"></i></a><a target="_blank" href="#" class="external"><i class="icon-forward"></i></a><a href="content/betheme/portfolio_item5.html" class="link"><i class="icon-link"></i></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        -->
-                        <div class="section mcb-section equal-height-wrap" style="padding-top:60px; padding-bottom:60px; background-color:#edeef0; background-image:url(./images/companyimages/home.jpg); background-repeat:repeat-y; background-position:center top">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap two-third  column-margin-0px valign-middle clearfix" style="padding:5px 0 0 0">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_column">
-                                            <div class="column_attr clearfix" style=" padding:7px 0 0;">
-                                                <h2><i class="icon-cart themecolor"></i> Interested in Ballers Afica? Don't wait join now!</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="wrap mcb-wrap one-third  column-margin-0px valign-middle clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_button">
-                                            <div class="button_align align_right">
-                                                <a class="button  button_size_3 button_theme button_js" href="#" target="_blank"><span class="button_label">Join us </span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="section mcb-section dark" style="padding-top:80px; padding-bottom:40px; background-color:#3e414c; background-image:url(./images/companyimages/hoop.jpg); background-repeat:no-repeat; background-position:center top">
-                            <div class="section_wrapper mcb-section-inner">
-                                <div class="wrap mcb-wrap one valign-top clearfix">
-                                    <div class="mcb-wrap-inner">
-                                        <div class="column mcb-column one column_fancy_heading">
-                                            <div class="fancy_heading fancy_heading_line">
-                                                <span class="slogan">That's not all ...</span>
-                                                <h2 class="title">Learn more about Ballers Africa</h2>
-                                            </div>
-                                        </div>
-                               
-                                            <div class="feature_list">
-                                                <div class="">
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-arenalogo.jpg" alt="what"> 
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-cards-logo.jpg" alt="what">
-                                                    </a>  
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-connectlogo.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/batv.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-entertainmentlogo.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">  
-                                                    <img src="images/companyimages/logos/ba-healthlogo.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-hublogo.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-leaguelogo3.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/about.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-logo.png" alt="what">
-                                                    </a>  
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-sportlogo.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                    <div>
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/ba-talentlogo.jpg" alt="what"> 
-                                                    </a>
-                                                    </div>
-
-                                                    <div>  
-                                                    <a href="content/betheme/company.html" title="company">
-                                                    <img src="images/companyimages/logos/bakologo.jpg" alt="what">
-                                                    </a>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer id="Footer" class="clearfix">
-            <div class="footer_copy">
-                <div class="container">
-                    <div class="column one">
-                        <a id="back_to_top" class="button button_js" href="#"><i class="icon-up-open-big"></i></a>
-                        <div class="copyright">
-                            &copy; 2023 - Ballers Africa. Ballers Africa group 
-                        </div>
-                        <ul class="social">
-                            <li class="skype">
-                                <a href="#" title="Skype"><i class="icon-skype"></i></a>
-                            </li>
-                            <li class="facebook">
-                                <a href="https://www.instagram.com/ballersafricagroup/" title="Facebook"><i class="icon-facebook"></i></a>
-                            </li>
-                            <li class="googleplus">
-                                <a href="#" title="Google+"><i class="icon-gplus"></i></a>
-                            </li>
-                            <li class="twitter">
-                                <a href="https://twitter.com/BallersAfrica_?t=dwUiAJP_RBGgZtQZL2HPAQ&s=08" title="Twitter"><i class="icon-twitter"></i></a>
-                            </li>
-                            <li class="vimeo">
-                                <a href="#" title="Vimeo"><i class="icon-vimeo"></i></a>
-                            </li>
-                            <li class="youtube">
-                                <a href="https://www.youtube.com/@BallersAfricaGroup" title="YouTube"><i class="icon-play"></i></a>
-                            </li>
-                            <li class="behance">
-                                <a href="#" title="Behance"><i class="icon-behance"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+    </header>
     
-    <!-- side menu -->
-    <div id="Side_slide" class="right dark">
-        <div class="close-wrapper">
-            <a href="#" class="close"><i class="icon-cancel-fine"></i></a>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to&nbsp;<span>Ballers Africa</span></h1>
+            <p><span>Revolutionizing Africa.&nbsp;</span>We are passionate about transforming lives in Africa through technology.</p>
+            <button class="explore-btn">Explore Now</button>
         </div>
-        
-        <div class="search-wrapper">
-            <form id="side-form" method="get" action="#">
-                <input type="text" class="field" name="s" id="s" placeholder="Enter your search">
-                <input type="submit" class="submit" value="" style="display:none">
-                <a class="submit" href="#"><i class="icon-search-fine"></i></a>
-            </form>
+        <div class="hero-animation">
+            
+            <div class="card1">
+                <img src="images/card1.png" alt="Pyramid Graphic">
+            </div>
+            <div class="card2">
+                <img src="images/card2.png" alt="Pyramid Graphic">
+            </div>
         </div>
+    </section>
+    
+    <section id="crypto-market" class="crypto-market">
+        <div>
+            <div class="heading">
+            <h2>Our brands</h2>
+        </div>
+            <div class="carousel-container">
+                <!-- Incoming (Top corner) image -->
+                <div class="incoming-images">
+                    <img src="images/card.jpg" class="incoming-img" id="incomingImg">
+                </div>
+
+                <!-- Main Image and Description -->
+                <div class="main-section">
+                    <div class="image-and-description">
+                        <img src="images/HUB2.jpg" class="main-img" id="mainImg">
+                        <div class="description">
+                            <h2 id="brandTitle">Brand Name</h2>
+                            <p id="descriptionText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis culpa similique consequuntur, reprehenderit dicta repudiandae.</p>
+                            <!-- Next and Previous buttons under the description -->
+                            <div class="navigation">
+                                <button class="prev">← Previous</button>
+                                <button class="next">Next →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outgoing (Bottom corner) image -->
+                <div class="outgoing-images">
+                    <img src="images/hexX.jpg" class="outgoing-img" id="outgoingImg">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="aboutus" class="currency-calculator">
+        <div class="about-us">
+            <div class="heading">
+                <h2>About Us</h2>
+            </div>
+                <div class="features">
+                    <div class="feature-item">
+                        <img src="icon1.png" alt="company Icon">
+                        <h3>Our Company</h3>
+                        <p>Welcome to Ballers Africa! We are a passionate team based in Africa, and we absolutely love what we do.</p>
+                <p>Our commitment to transforming lives, empowering communities, and inspiring positive change through sports, entertainment, love for Africa, and technology drives our every action. We take great pride in providing exceptional products and solutions to our customers and partners.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="icon2.png" alt="Mission Icon">
+                        <h3>Mission</h3>
+                        <p>Our mission is crystal clear - to expand the Tribe and its Territory. We strive to reach out to all revolutionaries across Africa, unifying them under a common language of greatness.</p>
+                        <p>By scaling our tribe and creating sub-companies and initiatives, we can achieve collective goals, support each other, and bring visions to life. Our ultimate goal is to see Africa at the top - a continent filled with unified potential.</p>
+                    </div>
+                    <div class="feature-item">
+                        <img src="icon3.png" alt="Passion Icon">
+                        <h3>Passion</h3>
+                        <p>At Ballers Africa, our passion lies in transforming lives through sports, entertainment, and technology.</p>
+                        <p>We are driven by the desire to unify Africa, harness its potential, and bring forth solutions to the continent's challenges. With a deliberate drive for revolution, we aim to make the once-called impossible a reality. We believe in the power of a tribe with a unified language, mindset, and way of life to overcome obstacles and thrive.</p>
+                    </div>
+                </div>
+            </div>
+            
         
-        <div class="menu_wrapper"></div>
-        <ul class="social">
-            <li class="skype">
-                <a href="#" title="Skype"><i class="icon-skype"></i></a>
-            </li>
-            <li class="facebook">
-                <a href="https://www.instagram.com/ballersafricagroup/" title="Facebook"><i class="icon-facebook"></i></a>
-            </li>
-            <li class="googleplus">
-                <a href="#" title="Google+"><i class="icon-gplus"></i></a>
-            </li>
-            <li class="twitter">
-                <a href="https://twitter.com/BallersAfrica_?t=dwUiAJP_RBGgZtQZL2HPAQ&s=08" title="Twitter"><i class="icon-twitter"></i></a>
-            </li>
-            <li class="vimeo">
-                <a href="#" title="Vimeo"><i class="icon-vimeo"></i></a>
-            </li>
-            <li class="youtube">
-                <a href="https://www.youtube.com/@BallersAfricaGroup" title="YouTube"><i class="icon-play"></i></a>
-            </li>
-            <li class="behance">
-                <a href="#" title="Behance"><i class="icon-behance"></i></a>
-            </li>
-        </ul>
+    </section>
+    <section id="contact">
+        <section id="how-it-works" class="how-it-works">
+            <div class="heading">
+                <h2>How it works</h2>
+            </div>
+            <div class="image-section">
+                <img src="images/photo_2024-09-03_20-29-03.jpg" alt="Team Working" class="work-image">
+                <img src="images/photo_2024-09-03_20-29-07.jpg" alt="Discussion" class="work-image">
+                <img src="images/photo_2024-09-03_20-29-14 (2).jpg" alt="Planning" class="work-image">
+            </div>
+        
+            <div class="content-section">
+                <h2>Get started with our NFC powered prepaid card system</h2>
+                <p>The BA Card System is an innovative solution designed to streamline cashless transactions, promote financial inclusion, and foster a culture of sustainability within communities. Powered by Near Field Communication (NFC) technology, our NFC enabled prepaid card allows users to make secure, instant payments at affiliated locations without the need for a mobile phone, internet connection, or traditional banking infrastructure. The system primarily targets educational institutions, businesses, and organizations where quick, efficient transactions are necessary, but its applications extend to a variety of sectors as we aim to foster mass adoption of IT solutions using our ecosystem.
+                    At its core, the BA Card System addresses three key challenges: financial accessibility, sustainability(Through incentivizing eco-friendly purchases and practices), and transactional efficiency. Many individuals, particularly students and low-income groups, struggle with limited access to banking services or digital financial tools. By providing a low-cost alternative that does not require a smartphone or internet connection, the BA Card system enables broader participation in the cashless economy, empowering those who are often excluded from mainstream financial services.</p>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="contact-us">
+        <div class="contact-container">
+            <div class="heading">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to us for any inquiries or questions. We’re here to help!</p>
+                <ul class="contact-details">
+                    <li><strong>Address:</strong> Kampala, Uganda</li>
+                    <li><strong>Phone:</strong> +256 785 975771</li>
+                    <li><strong>Email:</strong> pbakka23@gmail.com</li>
+                </ul>
+            </div>
+    
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="php/contact.php" method="POST" class="form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    
+</section>
+<section class="footer">
+    <h2>Feel free to reach out on our socials</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/company/ballers-africa-limited/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://x.com/BallersAfrica_" target="_blank" class="social-icon">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/ballersafricagroup/" target="_blank" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://youtube.com/@ballersafricagroup?feature=shared" target="_blank" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
     </div>
-    <div id="body_overlay"></div>
+    <div class="footer-links">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Support</a>
+      <a href="#">About Us</a>
+    </div>
+    <div class="copyright">
+      &copy; 2024 Ballers Africa Limited. All rights reserved.
+    </div>
+  </section>
 
+  <!-- Back to top button -->
+  <button class="back-to-top" id="backToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-    <!-- JS -->
-    <script src="js/jquery-2.1.4.min.js"></script>
+  <script>
+    // Show the back-to-top button when scrolled down 100px
+    window.onscroll = function() {
+      const btn = document.getElementById('backToTopBtn');
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    };
 
-    <script src="js/mfn.menu.js"></script>
-    <script src="js/jquery.plugins.js"></script>
-    <script src="js/jquery.jplayer.min.js"></script>
-    <script src="js/animations/animations.js"></script>
-    <script src="js/translate3d.js"></script>
-    <script src="js/scripts.js"></script>
-
-    <script src="plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-    <script src="plugins/rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-
-    <script>
-        var tpj = jQuery;
-        var revapi1;
-        tpj(document).ready(function() {
-            if (tpj("#rev_slider_1_1").revolution == undefined) {
-                revslider_showDoubleJqueryError("#rev_slider_1_1");
-            } else {
-                revapi1 = tpj("#rev_slider_1_1").show().revolution({
-                    sliderType: "hero",
-                    sliderLayout: "auto",
-                    dottedOverlay: "none",
-                    delay: 9000,
-                    navigation: {},
-                    visibilityLevels: [1240, 1024, 778, 480],
-                    gridwidth: 1240,
-                    gridheight: 760,
-                    lazyType: "none",
-                    parallax: {
-                        type: "scroll",
-                        origo: "enterpoint",
-                        speed: 400,
-                        levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
-                    },
-                    shadow: 0,
-                    spinner: "spinner2",
-                    autoHeight: "off",
-                    disableProgressBar: "on",
-                    hideThumbsOnMobile: "off",
-                    hideSliderAtLimit: 0,
-                    hideCaptionAtLimit: 0,
-                    hideAllCaptionAtLilmit: 0,
-                    debugMode: false,
-                    fallbacks: {
-                        simplifyAll: "off",
-                        disableFocusListener: false,
-                    }
-                });
-            }
-        });
-        /*]]>*/
-    </script>
-
-    <script>
-        jQuery(window).load(function() {
-            var retina = window.devicePixelRatio > 1 ? true : false;
-            if (retina) {
-                var retinaEl = jQuery("#logo img.logo-main");
-                var retinaLogoW = retinaEl.width();
-                var retinaLogoH = retinaEl.height();
-                retinaEl.attr("src", "content/betheme/images/logo.png").width(retinaLogoW).height(retinaLogoH);
-                var stickyEl = jQuery("#logo img.logo-sticky");
-                var stickyLogoW = stickyEl.width();
-                var stickyLogoH = stickyEl.height();
-                stickyEl.attr("src", "content/betheme/images/logo.png").width(stickyLogoW).height(stickyLogoH);
-                var mobileEl = jQuery("#logo img.logo-mobile");
-                var mobileLogoW = mobileEl.width();
-                var mobileLogoH = mobileEl.height();
-                mobileEl.attr("src", "content/betheme/images/logo.png").width(mobileLogoW).height(mobileLogoH);
-                var mobileStickyEl = jQuery("#logo img.logo-mobile-sticky");
-                var mobileStickyLogoW = mobileStickyEl.width();
-                var mobileStickyLogoH = mobileStickyEl.height();
-                mobileStickyEl.attr("src", "content/betheme/images/logo.png").width(mobileStickyLogoW).height(mobileStickyLogoH);
-            }
-        });
-    </script>
-
+    // Scroll back to the top when the button is clicked
+    document.getElementById('backToTopBtn').addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/web3.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
-
 </html>

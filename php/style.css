@@ -1,0 +1,98 @@
+/* Main contact section styles */
+#contact-us {
+    background-color: #0a0e1a; /* Dark background matching the image */
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    width: 80%; /* Constrain the width for center alignment */
+    max-width: 1200px;
+}
+
+.contact-info, .contact-form {
+    background-color: #0a0e1a; /* Darker background for containers */
+    padding: 40px;
+    border-radius: 8px;
+    width: 100%; /* Full width for both cards */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Strong shadow for depth */
+    color: #fff;
+    margin-bottom: 30px; /* Spacing between contact info and form */
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #ff7300; /* Orange headers */
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #ccc; /* Slightly lighter text for readability */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #b3b3b3;
+}
+
+.contact-details li strong {
+    color: #ff7300; /* Highlighted labels in orange */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #24283579; /* Dark input background */
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: #777;
+}
+
+.contact-form button {
+    background-color: #ff7300; /* Bright orange button */
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.contact-form button:hover {
+    background-color: #e56700; /* Darker orange on hover */
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 0 20px; /* Padding on smaller screens */
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
