@@ -27,7 +27,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 1.25rem 3.125rem; /* 20px / 16px = 1.25rem, 50px / 16px = 3.125rem */
     background-color: #090d1a;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -39,12 +39,12 @@ header {
 
 /* Logo */
 .logo {
-    font-size: 24px;
+    font-size: 1.5rem; /* 24px / 16px = 1.5rem */
     color: #ff7300;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-left: 40px;
+    margin-left: 2.5rem; /* 40px / 16px = 2.5rem */
 }
 .logo span {
     color: #ffffff;
@@ -54,7 +54,7 @@ header {
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 25px;
+    gap: 1.5625rem; /* 25px / 16px = 1.5625rem */
 }
 
 nav ul li {
@@ -64,7 +64,7 @@ nav ul li {
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem; /* 16px / 16px = 1rem */
     transition: color 0.3s;
 }
 
@@ -75,16 +75,16 @@ nav ul li a:hover {
 /* Actions (Buttons in Header) */
 .actions {
     display: flex;
-    gap: 15px;
-    margin-left: -50px;
+    gap: 0.9375rem; /* 15px / 16px = 0.9375rem */
+    margin-left: -3.125rem; /* -50px / 16px = -3.125rem */
 }
 
 .actions .register-btn, .actions .wallet-btn {
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem; /* 10px / 16px = 0.625rem, 20px / 16px = 1.25rem */
     border: none;
     background-color: transparent;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.875rem; /* 14px / 16px = 0.875rem */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
@@ -103,6 +103,7 @@ nav ul li a:hover {
     background-color: #ffffff;
     color: #0d1428;
 }
+
 .hamburger {
     display: none; /* Hidden by default */
     flex-direction: column;
@@ -117,19 +118,18 @@ nav ul li a:hover {
     margin: 4px 0;
 }
 
-@media (max-width: 668px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column; /* Stack header items */
-        padding: 20px;
+        padding: 1rem; /* Reduce padding for smaller screens */
         width: 100%;
         margin-left: -40px;
-        
     }
 
     nav ul {
         display: none; /* Hide nav items by default */
         flex-direction: column; /* Stack nav items vertically */
-        gap: 10px; /* Space out nav items */
+        gap: 0.625rem; /* 10px / 16px = 0.625rem */
     }
     
     nav ul.show {
@@ -139,14 +139,13 @@ nav ul li a:hover {
     .actions {
         display: none; /* Hide action buttons by default */
         flex-direction: row; /* Arrange buttons in a row */
-        gap: 10px; /* Space out buttons */
+        gap: 0.625rem; /* 10px / 16px = 0.625rem */
     }
     
     .actions.show {
         display: flex; /* Show action buttons when toggled */
     }
-    
-    /* Optional: Additional styling for nav items and buttons */
+
     nav ul li {
         list-style: none; /* Remove default list style */
     }
@@ -154,7 +153,7 @@ nav ul li a:hover {
     nav ul li a {
         text-decoration: none; /* Remove underline from links */
         color: #fff; /* Change text color to white */
-        padding: 10px; /* Add padding to links for better click area */
+        padding: 0.625rem; /* 10px / 16px = 0.625rem */
         transition: background-color 0.3s; /* Smooth background change */
     }
     
@@ -166,7 +165,7 @@ nav ul li a:hover {
         background-color: #ff7300; /* Button color */
         color: #fff; /* Button text color */
         border: none;
-        padding: 10px 15px; /* Button padding */
+        padding: 0.625rem 0.9375rem; /* 10px / 16px = 0.625rem, 15px / 16px = 0.9375rem */
         border-radius: 5px; /* Rounded corners */
         cursor: pointer; /* Pointer cursor on hover */
         transition: background-color 0.3s; /* Smooth background change */
@@ -175,17 +174,23 @@ nav ul li a:hover {
     .actions button:hover {
         background-color: #c55a03; /* Darker on hover */
     }
-    
 
     .hamburger {
         display: flex; /* Show hamburger icon on smaller screens */
         align-self: flex-end; /* Align to the end of the header */
-        margin-top: -40px;
+        margin-top: -2rem; /* Adjusted for better positioning */
     }
-    .logo{
-        margin-right: 250px;
-    }
-}
+
+    .logo {
+            font-size: 1.5rem; /* Adjusted font size */
+            color: #ff7300;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: auto; /* Push the logo to the right */
+            margin-left: 1.5rem; /* Space from the right edge */
+        }    }
+
 
 .hero {
     display: flex;
@@ -329,7 +334,37 @@ nav ul li a:hover {
         filter: drop-shadow(0 0 10px #ff73007e);
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 480px){
+    .hero {
+        flex-direction: column; /* Stack items */
+        height: auto; /* Allow height to adjust */
+        padding: 10px; /* Reduce padding */
+    }
+
+    /* Set card1 as the background */
+    .card1 {
+        display: none; /* Hide card2 */
+    }
+
+    /* Hide card2 in responsive mode */
+    .card2 {
+        display: none; /* Hide card2 */
+    }
+
+    /* Ensure text appears above the background */
+    .hero-text {
+        z-index: 1; /* Bring text above the background */
+        text-align: center; /* Center text */
+        
+    }
+    .hero-text h1 {
+        font-size: 50px; /* Further reduce heading size */
+    }
+    .explore-btn {
+        margin-top: 20px; /* Add spacing */
+    }
+}
+@media (max-width: 780px){
     .hero {
         flex-direction: column; /* Stack items */
         height: auto; /* Allow height to adjust */
@@ -350,8 +385,11 @@ nav ul li a:hover {
     .hero-text {
         z-index: 1; /* Bring text above the background */
         text-align: center; /* Center text */
+        
     }
-
+    .hero-text h1 {
+        font-size: 60px; /* Further reduce heading size */
+    }
     .explore-btn {
         margin-top: 20px; /* Add spacing */
     }
@@ -437,6 +475,7 @@ nav ul li a:hover {
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
     transition: transform 0.8s ease;
+    }
     @media screen and (max-width: 768px) {
         .carousel-container {
             flex-direction: column;
@@ -493,7 +532,6 @@ nav ul li a:hover {
         }
     }
     
-}
 
 .main-img:hover {
     transform: scale(1.05);
