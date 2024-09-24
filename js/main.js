@@ -1,7 +1,7 @@
 // Add simple animations using JavaScript (if needed) for interactivity
 document.querySelector('.explore-btn').addEventListener('click', function() {
     window.scrollTo({
-        top: document.querySelector('.crypto-market').offsetTop,
+        top: document.querySelector('.how-it-works').offsetTop,
         behavior: 'smooth'
     });
 });
