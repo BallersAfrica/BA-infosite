@@ -1,4 +1,5 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -10,11 +11,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $body = "Name: $name\nEmail: $email\n\nMessage:\n$message";
     $headers = "From: $email";
 
-    // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully!";
+        header("Location: thank_you.php"); // Replace with your desired page
+        exit();
     } else {
         echo "Failed to send message.";
     }
+    
 }
 ?>
