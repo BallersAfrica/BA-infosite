@@ -13,7 +13,7 @@ const images = [
     {src: 'images/HEALTH.jpg', desc: 'We provide a wide variety of health and wellness services to our customers. Our mission is to provide our customers with the best possible health and wellness experience by offering them a wide variety of services, including fitness classes, nutrition counseling, and more.', title: 'BA HEALTH'},
     {src: 'images/TALENT.jpg', desc: 'We provide a platform for talented individuals to showcase their skills and talents to the world. Our mission is to help aspiring artists, musicians, and entertainers reach their full potential by providing them with the necessary resources, support, and opportunities they need to succeed in their careers.', title: 'BA TALENT'},
     {src: 'images/SPORTS.jpg', desc: 'Ballers Africa that focuses on promoting and developing various sports across the continent, Our aim is to provide world-class training, mentorship, and resources to aspiring athletes and coaches, as well as organize and support various sports events and leagues that showcase African talent and potential.', title: 'BA SPORTS'},
-    {src: 'images/kidAID.jpg', desc: 'Our mission at Kid-Aid is to provide underprivileged children within our community with the education, housing, and life skills necessary for a successful future.', title: 'KIDAID'}
+    {src: 'images/kidAID.jpg', desc: 'Our mission at Kid-Aid is to provide underprivileged children within our community with the education, housing, and life skills necessary for a successful future.', title: 'KIDAID'},
     {src: 'images/BAKO2.jpg', desc: 'The BA clothline and shoeline store. Where technology meets fashion giving our community members an incredible and unique shopping experience at the best prices', title: 'BAKO'}
 ];
 
