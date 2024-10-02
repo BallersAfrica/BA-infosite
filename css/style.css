@@ -39,7 +39,7 @@ header {
 
 /* Logo */
 .logo {
-    font-size: 1.5rem; /* 24px / 16px = 1.5rem */
+    width: 10px;/* 24px / 16px = 1.5rem */
     color: #ff7300;
     font-weight: bold;
     text-transform: uppercase;
@@ -182,13 +182,13 @@ nav ul li a:hover {
     }
 
     .logo {
-            font-size: 1.5rem; /* Adjusted font size */
+            width: 10px; /* Adjusted font size */
             color: #ff7300;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-right: auto; /* Push the logo to the right */
-            margin-left: 1.5rem; /* Space from the right edge */
+            margin-left: 50px; /* Space from the right edge */
         }    }
 
 
